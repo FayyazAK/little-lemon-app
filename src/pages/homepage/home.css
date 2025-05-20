@@ -1,0 +1,223 @@
+/********* HERO SECTION *********/
+.hero-section {
+    padding: 3rem 2rem;
+    background-color: var(--primaryColor);
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hero-content {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-title {
+    color: var(--secondaryColor);
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero-location {
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 0;
+    font-style: italic;
+    color: #fff;
+}
+
+.hero-descr {
+    max-width: 45ch;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.cta-link {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.hero-image {
+    border-radius: 16px;
+    height: auto;
+    max-width: 300px;
+    max-height: 367px;
+    margin: 2rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.hero-image:hover {
+    transform: scale(1.03);
+}
+
+/********* HIGHLIGHTS SECTION *********/
+.highlights-section {
+    margin: 6rem 0 2rem auto;
+    padding: 2rem;
+}
+
+.testimonials {
+    list-style: none;
+}
+
+/********* TESTIMONIALS SECTION *********/
+.testimonials-section {
+    margin: 6rem ;
+}
+
+.section-title {
+    text-align: center;
+}
+
+.testimonials {
+    margin: 4rem 1rem;
+    padding: 1rem;
+}
+
+.user {
+    margin: 2rem 0;
+}
+
+.user-review {
+    max-width: 20ch;
+}
+
+/********* ABOUT SECTION *********/
+
+.about-section {
+    margin: 6rem 0;
+}
+
+.about-info {
+    margin: auto auto auto 6rem;
+    overflow:hidden;
+}
+
+.about-images {
+    margin: auto auto auto 12rem;
+    width: fit-content;
+}
+
+.overlap-1 {
+    position: relative;
+    z-index: 1;
+
+}
+
+.overlap-2 {
+    position: relative;
+    z-index: 2;
+    top: -30px;
+    left: -100px;
+}
+
+
+/* Tablet */
+@media screen and (width >= 800px) {
+    /********* TESTIMONIALS SECTION *********/
+    .testimonials {
+        display: flex;
+        flex: row wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: auto 2rem;
+        width: 100%;
+    }
+}
+
+/* Desktop */
+@media screen and (width >= 1000px) {
+/********* HERO SECTION *********/
+    .hero-section {
+        display: flex;
+        flex: row nowrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 4rem;
+        padding: 4rem 6rem;
+    }
+
+    .hero-title {
+        margin: auto;
+        font-size: 3rem;
+    }
+
+    .hero-location {
+        font-size: 1.5rem;
+    }
+
+    .hero-descr {
+        font-size: 1.1rem;
+    }
+
+    .hero-image {
+        max-width: 400px;
+        max-height: 467px;
+    }
+
+    .hero-section, .card-gallary {
+        display: flex;
+        flex: row nowrap;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .hero-section {
+        overflow-x: hidden;
+     }
+
+    /********* HIGHLIGHTS SECTION *********/
+    .card-gallary {
+        gap: 2rem;
+    }
+
+    .announcement{
+        display: flex;
+        flex: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    /********* TESTIMONIALS SECTION *********/
+    .testimonials {
+        display: flex;
+        flex: row nowrap;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: auto 2rem;
+        width: 100%;
+    }
+
+    .user {
+        max-width: 25ch;
+        width: fit-content;
+    }
+
+    /********* ABOUT SECTION *********/
+    .about-section {
+        display: flex;
+        flex: row nowrap;
+        align-items: center;
+        justify-content: space-around;
+        margin: 6rem 2rem;
+        width: 100%;
+    }
+
+    .about-images {
+        margin: auto auto auto 4rem;
+    }
+}
